@@ -77,14 +77,15 @@
     <span class="err">$</span><span class="p">(</span><span class="n">this</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">generate_coin</span><span class="p">())</span>
       <span class="p">}</span>
 
-      <span class="n">setTimeout</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span>
+      <span class="n">var</span> <span class="n">timesup</span> <span class="o">=</span> <span class="n">setTimeout</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span>
     <span class="err">$</span><span class="p">(</span><span class="s2">&quot;.jq_coins&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">hide</span><span class="p">()</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+    <span class="n">clearTimeout</span><span class="p">(</span><span class="n">timesup</span><span class="p">)</span>
     <span class="n">settings</span><span class="o">.</span><span class="n">expire_callback</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
       <span class="p">},</span> <span class="n">settings</span><span class="o">.</span><span class="n">expires</span><span class="p">)</span>
+
   <span class="p">});</span>
     <span class="p">};</span>
-<span class="p">})(</span> <span class="n">jQuery</span> <span class="p">);</span>
-<span class="n">g</span></pre></div>
+<span class="p">})(</span> <span class="n">jQuery</span> <span class="p">);</span></pre></div>
       </td>
     </tr>
   </table>

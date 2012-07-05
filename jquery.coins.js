@@ -50,11 +50,12 @@
 		$(this).append(generate_coin())
 	    }
 
-	    setTimeout(function(){
+	    var timesup = setTimeout(function(){
 		$(".jq_coins").hide().remove()
+		clearTimeout(timesup)
 		settings.expire_callback(score)
 	    }, settings.expires)
+
 	});
     };
 })( jQuery );
-g
