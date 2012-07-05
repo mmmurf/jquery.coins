@@ -34,7 +34,7 @@
 
 		c.mouseover(function(){
 		    score += settings.points;
-		    var aud = $('<audio autoplay="autoplay"><source src="audio/mario.ogg" type="audio/ogg" /></audio>').clone().remove()
+		    var aud = $('<audio autoplay="autoplay"><source src="audio/mario.ogg" type="audio/ogg" /><source src="audio/mario.mp3" type="audio/mp3" /><source src="audio/mario.wav" type="audio/wav" /></audio>').clone().remove()
 
 		    coins_left -= 1;
 		    $(this).hide().remove()
