@@ -4,6 +4,9 @@ jquery.coins
 jquery.coins is a simple jQuery plugin for generating a bunch of
 spinning coins to gamify any site.
 
+<a href="http://mmmurf.github.com/jquery.coins/">Demo</a>
+
+
   $(document).ready(function(){
     $("#target").coins({
       count: 5,
@@ -15,4 +18,3 @@ spinning coins to gamify any site.
       }
     })
   })
-
